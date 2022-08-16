@@ -1,6 +1,5 @@
-use std::{env, process};
 use minigrep::Config;
-
+use std::{env, process};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -16,5 +15,4 @@ fn main() {
         println!("Application error: {e}");
         process::exit(1);
     }
-   
 }
